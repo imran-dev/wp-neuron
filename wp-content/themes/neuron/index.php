@@ -105,7 +105,16 @@
 
 	                <!-- Collect the nav links, forms, and other content for toggling -->
 	                <div class="collapse navbar-collapse" id="navbar-menu">
-	                    <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+
+						<?php
+							wp_nav_menu([
+								'theme_location' => 'menu-1',
+								// 'menu_id' => 'navbar-menu',
+								'menu_class' => 'nav navbar-nav navbar-right',
+							]);						
+						?>
+
+	                    <!-- <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
 	                        <li class="active"><a href="index.html">Home</a></li>
 	                        <li><a href="about.html">About Us</a></li>
 	                        <li><a href="services.html">Services</a></li>
@@ -125,7 +134,7 @@
 	                            </ul>
 	                        </li>
 	                        <li><a href="contact.html">Contact</a></li>
-	                    </ul>
+	                    </ul> -->
 	                </div><!-- /.navbar-collapse -->
 	            </div>
 	        </nav>
